@@ -1,0 +1,30 @@
+###get users
+get http://localhost:3000/users
+
+###get user by id 
+get http://localhost:3000/user/1
+
+###post 
+post http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"rajesh",
+    "age":22
+}
+
+###put user
+put http://localhost:3000/user
+Content-Type: application/json
+
+{
+    "id":1,
+    "name":"kumar",
+    "age":22
+}
+###delete a user /users
+
+delete http://localhost:3000/users/5
+
+
